@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Esinnation_Gadgets",
+    "slug": "Esinnation_Gadgets",
+    "descripion":"Esinnation's Gadgets store",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.esinnation.Esinnation_Gadgets"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f0af24f1-154c-4b9e-9827-3645021391d3"
+      }
+    }
+  }
+}
