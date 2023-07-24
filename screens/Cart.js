@@ -6,6 +6,7 @@ import { useStateContext } from '../context/StateContext'
 import {MaterialIcons} from '@expo/vector-icons'
 import Flutterwave from '../compoents/flutterwave'
 import Toast from 'react-native-root-toast';
+import { StatusBar } from 'expo-status-bar'
 
 
 const Cart = ({navigation}) => {
@@ -34,6 +35,7 @@ const Cart = ({navigation}) => {
   }
   return (
     <View style={globalStyles.container}>
+      <StatusBar style='dark' />
       <Text style={{color: '#909090',marginBottom:10}}>CART SUMMARY</Text>
       {cartItems.length < 1 &&(
         <View style={{flex:1,gap:10,justifyContent:'center',alignItems:'center'}}>

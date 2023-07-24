@@ -13,7 +13,7 @@ import { setupURLPolyfill } from 'react-native-url-polyfill';
 import { StateContext } from './context/StateContext';
 import { RootSiblingParent } from 'react-native-root-siblings';
 import MyTabs from './routes/MyTabs';
-import Stacks from './routes/Stacks';
+// import Stacks from './routes/Stacks';
 import { FavoriteContext } from './context/FavouriteContext';
 
 setupURLPolyfill();
@@ -25,7 +25,7 @@ export default function App() {
           <StateContext>
             <RootSiblingParent>  
               <NavigationContainer>
-                <Stacks/>
+                <MyTabs/>
               </NavigationContainer>
             </RootSiblingParent>
           </StateContext>

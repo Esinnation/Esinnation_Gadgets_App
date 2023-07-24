@@ -4,6 +4,7 @@ import {Feather} from '@expo/vector-icons'
 import { globalStyles } from '../global'
 import { client } from '../lib/client'
 import Card2 from '../shared/Card2'
+import { StatusBar } from 'expo-status-bar'
 
 
 
@@ -32,13 +33,14 @@ const Search = ({navigation}) => {
     }
     fetch()
   },[search])
-
+  
   const handleSearch = (e) =>{
     setSearch(e)
   }
-
+  
   return (
     <TouchableWithoutFeedback onPress={()=> Keyboard.dismiss()}>
+      <StatusBar style='dark' />
       <View  style={[globalStyles.container,styles.container]}>
         <View style={styles.searchContainer}>
           <Feather name='search' size={24} color={'#CFCFCF'} />

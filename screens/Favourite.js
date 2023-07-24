@@ -4,12 +4,14 @@ import { globalStyles } from '../global'
 import { useFavoriteContext } from '../context/FavouriteContext'
 import Card2 from '../shared/Card2'
 import {Feather} from '@expo/vector-icons'
+import { StatusBar } from 'expo-status-bar'
 
 
 const Favourite = ({navigation}) => {
   const { favorites } = useFavoriteContext();
   return (
     <View style={globalStyles.container}>
+<StatusBar style='dark' />
       {favorites.length < 1 && (
         <View style={{flex:1,gap:10,justifyContent:'center',alignItems:'center'}}>
         <Feather name='heart' size={150} color='black' />

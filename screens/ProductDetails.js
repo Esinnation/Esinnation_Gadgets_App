@@ -1,4 +1,4 @@
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View,TouchableOpacity } from 'react-native'
+import { SafeAreaView, ScrollView,StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import {Feather} from '@expo/vector-icons'
 import { globalStyles } from '../global'
@@ -8,6 +8,8 @@ import Bottom from '../shared/Bottom'
 import { urlFor } from '../lib/client'
 import { Image } from 'expo-image';
 import { useStateContext } from '../context/StateContext'
+import { StatusBar } from 'expo-status-bar'
+
 
 
 
@@ -20,6 +22,7 @@ const ProductDetails = ({route:{params}}) => {
   const {shipping,rating,price,name,details,image} = params
 return (
     <SafeAreaView style={globalStyles.container}>
+      <StatusBar style='dark' />
       <View style={styles.mainImageContainer}>
         <Image source={urlFor(image[index]).url()} style={{width:200,height:200}} contentFit="contain"   />
       </View>
