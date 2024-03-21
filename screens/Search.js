@@ -40,8 +40,8 @@ const Search = ({navigation}) => {
   
   return (
     <TouchableWithoutFeedback onPress={()=> Keyboard.dismiss()}>
-      <StatusBar style='dark' />
       <View  style={[globalStyles.container,styles.container]}>
+        <StatusBar style='dark' />
         <View style={styles.searchContainer}>
           <Feather name='search' size={24} color={'#CFCFCF'} />
           <TextInput placeholder='Search products' onChangeText={handleSearch} value={search} style={styles.textInput} />
